@@ -102,7 +102,6 @@ private void Update() {
     //Death Animations Statement
     if (enData1.health<1) enemyAnim.SetBool("enemyDead",true);
     if (enData2.health<1) enemyAnim.SetBool("enemyDead2",true);
-    if (PlayerData.health<0) Player.Dead=true;
     //
     if (target!=null)    //DeathPlayer Statement
     {
@@ -119,6 +118,7 @@ private void Update() {
     }
 }
 private void FixedUpdate() {
+    if (PlayerData.health<0) Player.Dead=true;
     #region TargetPosition 
     try{
         target=FindObjectOfType<Player>().transform;
