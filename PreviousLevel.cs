@@ -22,10 +22,6 @@ public class PreviousLevel : MonoBehaviour
             prevLevel=true;
         }
     }
-
-    private void OnTriggerExit2D(Collider2D col2) {
-        if (col2.gameObject.tag=="PreviousLevel") Debug.Log("Level 22 exit");
-    }
     #endregion
 
     #region Init
