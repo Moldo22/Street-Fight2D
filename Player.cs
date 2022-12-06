@@ -33,6 +33,7 @@ public class Player : MonoBehaviour
     {
         rb=GetComponent<Rigidbody2D>();
         //NPC Default
+        gameObject.SetActive(true);
         playerData.health=200;
         playerData.hit=10+5*CurrentLevel;
         //
@@ -62,7 +63,7 @@ public class Player : MonoBehaviour
 #endregion
 
 private void Die() {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
 }   
 
     void Update()
