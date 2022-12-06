@@ -23,6 +23,7 @@ public class SceneSelecting : MonoBehaviour
 
     public static void Restart()
     {
+        Player.Dead=false;
         try
         {
           SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex-2);
