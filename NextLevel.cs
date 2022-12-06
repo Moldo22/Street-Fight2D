@@ -29,10 +29,6 @@ public class NextLevel : MonoBehaviour
             PreviousLevel.prevLevel=false;
         }
     }
-
-    private void OnTriggerExit2D(Collider2D col2) {
-        if (col2.gameObject.tag=="NextLevel") Debug.Log("Level 2 exit");
-    }
     #endregion
 
     #region Init
